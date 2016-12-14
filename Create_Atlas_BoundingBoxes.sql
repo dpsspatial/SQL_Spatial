@@ -17,4 +17,4 @@ where ST_Intersects(oct.geom, h.geom)
 and oct.year = '2016'
 group by oct.schnum,sch.school_name,sch.elem, sch.mid, sch.high
 
-)
+--)
