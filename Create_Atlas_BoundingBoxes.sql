@@ -11,7 +11,7 @@ oct.schnum
 from dpsdata."OctoberCount_Archive" as oct
 , public."CCD_Neighborhoods" as h
 
-join dpsdata."Schools_Current" as sch on oct.schnum = cast(sch.schnum as varchar)
+join dpsdata."Schools_Current" as sch on oct.schnum = sch.schnum
 
 where ST_Intersects(oct.geom, h.geom)
 and oct.year = '2016'
